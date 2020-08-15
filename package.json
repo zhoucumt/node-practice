@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/zhoucumt/node-practice#readme",
   "dependencies": {
+    "koa": "^2.13.0",
+    "lodash": "^4.17.20",
     "mysql": "^2.18.1"
   }
 }
