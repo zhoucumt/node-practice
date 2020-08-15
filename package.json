@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/zhoucumt/node-practice/issues"
   },
-  "homepage": "https://github.com/zhoucumt/node-practice#readme"
+  "homepage": "https://github.com/zhoucumt/node-practice#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
