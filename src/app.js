@@ -29,8 +29,17 @@ app.use = function(fn) {
 // };
 
 // redux旧版本实现
+// app.compose = function() {
+//   return app.middlewares.reduceRight((a, b) => () => b(a), () => {})();
+// };
+
 app.compose = function() {
-  return app.middlewares.reduceRight((a, b) => () => b(a), () => {})();
+  return Promise.resolve(
+    app.middlewares.reduceRight(
+      (a, b) => () => Promise.resolve(b(a)),
+      () => Promise.resolve()
+    )()
+  );
 };
 
 module.exports = app;
