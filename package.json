@@ -20,7 +20,7 @@
   "dependencies": {
     "es-module-lexer": "^0.3.25",
     "koa": "^2.13.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "mysql": "^2.18.1"
   }
 }
